@@ -1,6 +1,6 @@
 @font-face {
   font-family: "BRFirma";
-  src: url(./BRFirma/BRFirma-Light.ttf);
+  src: url(./BRFirma/BRFirma-Medium.ttf);
 }
 
 body {
@@ -66,7 +66,7 @@ header nav .header-nav {
 }
 
 header nav .header-nav .menu-icon .fa-grip-lines {
-  display: hidden;
+  display: none;
 }
 
 header nav .header-nav .header-nav-2 {
@@ -1177,74 +1177,45 @@ footer .copyright {
 }
 
 @media screen and (max-width: 420px) {
-  .sect-1 {
-    border: 5px solid black;
-    padding: 0;
-    height: 900px;
+  header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70px;
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
-  .sect-1 .sect-1-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  header nav .header-nav .header-nav-2 .header-nav-img {
+    width: 40%;
     height: 100%;
-    width: 100%;
-    padding: 0;
   }
-  .sect-1 .sect-1-container .sect-1-form {
-    position: absolute;
-    top: 0;
-    padding: 0;
-    border: 5px solid rebeccapurple;
-    width: 100%;
-    padding: 0;
-    height: 50%;
-  }
-  .sect-1 .sect-1-container .sect-1-form .sect-form {
-    padding: 0;
-    gap: 0;
-  }
-  .sect-1 .sect-1-container .sect-1-form .sect-form h1 {
-    position: absolute;
-    top: 0;
-    font-size: 1.2rem;
-    border: 4px solid black;
-    width: 100%;
-    padding: 0;
-    height: 15%;
-  }
-  .sect-1 .sect-1-container .sect-1-form .sect-form p {
-    border: 5px solid #0066f5;
-    height: 25%;
-    width: 100%;
-    font-size: 1rem;
-    padding: 0;
-    position: relative;
-  }
-  .sect-1 .sect-1-container .sect-1-form .sect-form .invest {
+  header nav .header-nav .header-nav-2 .header-nav-links1 {
+    width: 0;
     height: 0;
     display: none;
   }
-  .sect-1 .sect-1-container .sect-1-form .sect-form .app-buttons {
-    border: 5px solid orangered;
-    position: absolute;
+  header nav .header-nav .header-nav-links2 {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  header .menu-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 200px;
-    width: 100%;
-    height: 60%;
+    width: 30%;
+    height: 100%;
+  }
+  header .menu-icon .fa-grip-lines {
+    color: black;
+    font-size: 20px;
+  }
+  .sect-1 {
+    width: 0;
+    height: 0;
+    display: none;
   }
   .sect-2 {
     display: -webkit-box;
@@ -1257,17 +1228,20 @@ footer .copyright {
     width: 100%;
     height: 300vh;
     padding: 0;
+    gap: 20px;
   }
   .sect-2 .sect-2-container1,
   .sect-2 .sect-2-container2 {
     width: 100%;
     height: 50%;
+    padding: 20px 0;
+    gap: 20px;
   }
   .sect-2 .sect-2-container1 .card-text,
   .sect-2 .sect-2-container2 .card-text {
     width: 100%;
     height: 10%;
-    padding: 0;
+    padding-bottom: 20;
   }
   .sect-2 .sect-2-container1 .card-text h1,
   .sect-2 .sect-2-container2 .card-text h1 {
@@ -1299,6 +1273,7 @@ footer .copyright {
     padding: 0;
     background-size: 40% 40%;
     background-position: left 230px top 200px;
+    padding-left: 20px;
   }
   .sect-2 .sect-2-container1 .card-container .card h2,
   .sect-2 .sect-2-container1 .card-container .cards h2,
@@ -1312,6 +1287,8 @@ footer .copyright {
     padding: 0;
     height: 25%;
     width: 100%;
+    height: 20%;
+    padding-top: 15px;
   }
   .sect-2 .sect-2-container1 .card-container .card h1,
   .sect-2 .sect-2-container1 .card-container .cards h1,
@@ -1325,6 +1302,7 @@ footer .copyright {
     padding: 0;
     height: 25%;
     width: 100%;
+    height: 20%;
   }
   .sect-2 .sect-2-container1 .card-container .card p,
   .sect-2 .sect-2-container1 .card-container .cards p,
@@ -1338,6 +1316,7 @@ footer .copyright {
     font-size: 0.8rem;
     height: 40%;
     width: 100%;
+    height: 20%;
   }
   .sect-2 .sect-2-container1 .card-container .card a,
   .sect-2 .sect-2-container1 .card-container .cards a,
@@ -1412,6 +1391,7 @@ footer .copyright {
     padding: 0;
     width: 100%;
     height: 900px;
+    gap: 20px;
   }
   .sect-4 .text {
     height: 20%;
@@ -1420,7 +1400,7 @@ footer .copyright {
   }
   .sect-4 .text h1 {
     padding: 0;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 10px;
     height: 35%;
     font-size: 1.1rem;
@@ -1447,6 +1427,7 @@ footer .copyright {
     font-size: 0.7rem;
     padding: 0;
     padding-left: 10px;
+    padding-bottom: 15px;
   }
   .sect-4 .tips {
     display: -webkit-box;
@@ -1480,6 +1461,7 @@ footer .copyright {
   .sect-4 .tips .tips-container .secure .secure-box {
     height: 100%;
     width: 8%;
+    padding-top: 10px;
   }
   .sect-4 .tips .tips-container .secure .secure-box i {
     font-size: 1rem;
@@ -1512,7 +1494,7 @@ footer .copyright {
     padding-bottom: 50px;
   }
   .sect-5 .sect-5-text {
-    height: 20%;
+    height: 15%;
     width: 100%;
   }
   .sect-5 .sect-5-text h2 {
@@ -1531,9 +1513,8 @@ footer .copyright {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 80%;
+    height: 85%;
     width: 100%;
-    gap: 40px;
   }
   .sect-5 .review .review1 {
     height: 50%;
@@ -1550,6 +1531,10 @@ footer .copyright {
     font-size: 1rem;
     height: 40%;
     width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0;
   }
   .sect-5 .review .review1 .review1-text .rate {
     display: -webkit-box;
@@ -1563,17 +1548,18 @@ footer .copyright {
         -ms-flex-align: baseline;
             align-items: baseline;
     width: 100%;
+    padding: 0;
   }
   .sect-5 .review .review1 .review1-text .rate h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     height: 100%;
     width: 20%;
   }
   .sect-5 .review .review1 .review1-text .rate h1 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .sect-5 .review .review1 .review1-text .rate .stars i {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .sect-5 .review .review1 .review1-text .app {
     padding-top: 10px;
@@ -1588,6 +1574,7 @@ footer .copyright {
   }
   .sect-5 .review .review1 .review1-text .app button {
     width: 150px;
+    font-size: 0.5rem;
   }
   .sect-5 .review .review1 .store {
     height: 55%;
@@ -1603,19 +1590,20 @@ footer .copyright {
     padding: 0;
   }
   .sect-5 .review .review1 .store h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0;
     height: 30%;
     padding-top: 10px;
   }
   .sect-5 .review .review1 .store p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     padding: 0;
     line-height: 1.7;
+    height: 60%;
   }
   .sect-5 .review .review1 a {
-    height: 5%;
-    font-size: 0.8rem;
+    height: 10%;
+    font-size: 0.7rem;
   }
   .sect-6 {
     width: 90%;
@@ -1714,7 +1702,7 @@ footer .copyright {
   }
   footer .line {
     height: 1px;
-    background-color: red;
+    background-color: #022b69;
     width: 95%;
     margin-left: 10px;
   }
