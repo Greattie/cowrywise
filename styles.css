@@ -164,6 +164,10 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
 
 .sect-1 {
   height: 800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .sect-1 .sect-1-container {
@@ -171,35 +175,31 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .sect-1 .sect-1-container .sect-1-testimonial {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
 }
 
 .sect-1 .sect-1-container .sect-1-testimonial #empty-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  height: 750px;
-  width: 30%;
+  position: relative;
+  height: 100%;
   opacity: 0.5;
   background-color: #fff5cb;
-  z-index: -1;
+  z-index: 1;
+  width: 50%;
 }
 
 .sect-1 .sect-1-container .sect-1-testimonial .smile {
-  width: 40%;
-  height: 80%;
-  position: absolute;
-  bottom: -40px;
-  left: 80px;
-  z-index: 1;
+  height: 70%;
+  width: 70%;
+  position: relative;
+  z-index: 2;
+  bottom: 700px;
+  left: 100px;
 }
 
 .sect-1 .sect-1-container .sect-1-testimonial .smile img {
@@ -208,19 +208,21 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
 }
 
 .sect-1 .sect-1-container .sect-1-testimonial .smile .smile-text {
-  min-height: 180px;
-  width: 340px;
-  padding: 24px 32px;
+  width: 80%;
+  height: 35%;
+  position: absolute;
+  z-index: 4;
+  bottom: -60px;
+  left: 170px;
   background-color: white;
   color: black;
-  position: absolute;
-  bottom: -40px;
-  left: 230px;
-  z-index: 2;
+  padding: 20px;
+  color: rgba(2, 43, 105, 0.6);
 }
 
 .sect-1 .sect-1-container .sect-1-testimonial .smile .smile-text .smile-text1 {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  line-height: 1.5;
 }
 
 .sect-1 .sect-1-container .sect-1-testimonial .smile .smile-text .smile-text2 {
@@ -230,27 +232,29 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   gap: 100px;
 }
 
+.sect-1 .sect-1-container .sect-1-testimonial .smile .smile-text .smile-text2 a {
+  color: dodgerblue;
+}
+
 .sect-1 .sect-1-container .sect-1-testimonial .people {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 27%;
-  height: 100px;
+  height: 10%;
+  width: 50%;
+  gap: 30px;
   position: absolute;
-  bottom: -170px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  left: 80px;
-  gap: 20px;
+  bottom: 10px;
+  left: 40px;
+  z-index: 3;
 }
 
 .sect-1 .sect-1-container .sect-1-testimonial .people img {
-  height: 60px;
-  width: 45px;
+  width: 100%;
+  height: 100%;
 }
 
-.sect-1 .sect-1-container .sect-1-form {
+.sect-1 .sect-1-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,30 +269,26 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
           justify-content: center;
 }
 
-.sect-1 .sect-1-container .sect-1-form .sect-form {
+.sect-1 .sect-1-form .sect-form {
   height: 50%;
   width: 100%;
   padding: 20px;
 }
 
-.sect-1 .sect-1-container .sect-1-form .sect-form .app-buttons {
-  display: none;
-}
-
-.sect-1 .sect-1-container .sect-1-form .sect-form h1 {
+.sect-1 .sect-1-form .sect-form h1 {
   font-size: 5rem;
   color: #022b69;
   padding-bottom: 20px;
 }
 
-.sect-1 .sect-1-container .sect-1-form .sect-form p {
+.sect-1 .sect-1-form .sect-form p {
   color: rgba(2, 43, 105, 0.6);
   line-height: 1.2;
   font-size: 1.7rem;
   height: 70px;
 }
 
-.sect-1 .sect-1-container .sect-1-form .sect-form .invest {
+.sect-1 .sect-1-form .sect-form .invest {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +299,7 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   gap: 10px;
 }
 
-.sect-1 .sect-1-container .sect-1-form .sect-form .invest input {
+.sect-1 .sect-1-form .sect-form .invest input {
   height: 40px;
   width: 50%;
   border-radius: 5px;
@@ -309,7 +309,7 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   padding-left: 20px;
 }
 
-.sect-1 .sect-1-container .sect-1-form .sect-form .invest button {
+.sect-1 .sect-1-form .sect-form .invest button {
   height: 40px;
   width: 150px;
   border-radius: 5px;
@@ -323,6 +323,7 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 100px;
   width: 100%;
   height: 300vh;
 }
@@ -561,7 +562,7 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 800px;
+  height: 900px;
   width: 100%;
   padding-bottom: 100px;
 }
@@ -602,8 +603,9 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
 
 .sect-3 .build #build-h1 {
   height: 15%;
-  font-size: 3rem;
+  font-size: 2.6rem;
   width: 100%;
+  color: #022b69;
 }
 
 .sect-3 .build .text {
@@ -611,75 +613,62 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 70%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 20px;
 }
 
-.sect-3 .build .text .lines {
+.sect-3 .build .text .build-text {
+  height: calc(100% / 3);
+  width: 100%;
+}
+
+.sect-3 .build .text .build-text .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
-  width: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 20px;
+  width: 100%;
 }
 
-.sect-3 .build .text .lines .empty {
+.sect-3 .build .text .build-text .title h2 {
+  height: 100%;
+  width: 10%;
+  color: #076af5;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+.sect-3 .build .text .build-text .title h2 .empty {
   width: 1px;
-  height: 20%;
-}
-
-.sect-3 .build .text .create {
   height: 70%;
-  width: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 0px;
+  margin-left: 10px;
+  margin-top: 6px;
+  background-color: #076af5;
 }
 
-.sect-3 .build .text .create .created {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 30%;
+.sect-3 .build .text .build-text .title h1 {
+  height: 100%;
+  width: 90%;
+  color: #022b69;
+  font-size: 1.7rem;
 }
 
-.sect-3 .build .text .create .created h1 {
-  font-size: 1.5rem;
-}
-
-.sect-3 .build .text .create .created p {
-  font-size: 1rem;
+.sect-3 .build .text .build-text .title h1 p {
+  height: 70%;
+  padding-top: 20px;
+  color: #345486;
+  font-size: 0.9rem;
+  width: 60%;
+  line-height: 2;
 }
 
 .sect-3 .build .button {
   height: 10%;
   width: 70%;
-  padding-left: 50px;
 }
 
 .sect-3 .build .button button {
@@ -718,6 +707,8 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
           flex-direction: column;
   width: 100%;
   height: 30%;
+  padding-bottom: 20px;
+  gap: 20px;
 }
 
 .sect-4 .text h1 {
@@ -749,6 +740,7 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   display: flex;
   height: 70%;
   width: 100%;
+  padding-top: 20px;
 }
 
 .sect-4 .tips .tips-container {
@@ -978,6 +970,21 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   color: #0066f5;
 }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 70%;
+  gap: 20px;
+}
+
+.btn .fa-apple {
+  height: 100%;
+  font-size: 1.5rem;
+  margin-top: 3px;
+}
+
 .sect-6 {
   height: 300px;
   width: 100%;
@@ -1029,6 +1036,7 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  position: relative;
 }
 
 .sect-6 .input input {
@@ -1040,11 +1048,10 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   border-radius: 5px;
   font-size: 0.9rem;
   background-color: rgba(255, 255, 255, 0.25);
-  position: relative;
 }
 
 .sect-6 .input button {
-  height: 40px;
+  height: 35px;
   width: 150px;
   border-radius: 5px;
   background-color: white;
@@ -1052,7 +1059,8 @@ header nav .header-nav .header-nav-links2 ul #sign-button {
   font-size: 1rem;
   text-transform: capitalize;
   position: absolute;
-  right: 140px;
+  top: 122px;
+  right: 15px;
 }
 
 footer {
